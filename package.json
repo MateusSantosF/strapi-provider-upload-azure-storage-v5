@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-upload-azure-storage-v5",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Azure Blob Storage upload provider for Strapi v5",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
