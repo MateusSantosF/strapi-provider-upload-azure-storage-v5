@@ -1,0 +1,35 @@
+{
+  "name": "strapi-provider-upload-azure-storage-v5",
+  "version": "0.1.0",
+  "description": "Azure Blob Storage upload provider for Strapi v5",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "strapi",
+    "strapi-provider",
+    "azure",
+    "upload",
+    "blob",
+    "v5"
+  ],
+  "author": "Mateus Ferreira",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/storage-blob": "^12.27.0",
+    "stream": "^0.0.3"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.9.5"
+  }
+}
