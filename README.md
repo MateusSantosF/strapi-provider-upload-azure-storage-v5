@@ -34,3 +34,34 @@ export default ({ env }) => ({
     },
   },
 });
+
+// config/middlewares.ts
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "connect-src": ["'self'", "https:"],
+          "script-src": [
+            "'self'",
+            "unsafe-inline",
+          ],
+          "media-src": [
+            "'self'",
+            "blob:",
+            "data:",
+            `https://${process.env.AZURE_STORAGE_ACCOUNT}.blob.core.windows.net`,
+          ],
+          "img-src": [
+            "'self'",
+            "blob:",
+            "data:",
+            "market-assets.strapi.io",
+            `https://${process.env.AZURE_STORAGE_ACCOUNT}.blob.core.windows.net`,
+
+          ],
+        },
+      },
+    },
+  },
