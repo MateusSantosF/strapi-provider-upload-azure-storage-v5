@@ -29,7 +29,7 @@ type UploadFile = {
   url?: string;
 };
 
-export default {
+module.exports = {
   init: (options: ProviderOptions) => {
     const {
       account,
@@ -57,9 +57,9 @@ export default {
     };
 
     return {
-        /**
-         * Upload file via buffer
-         */
+      /**
+       * Upload file via buffer
+       */
       upload: async (file: UploadFile) => {
         // Size check
         if (sizeLimit && file.size && file.size > sizeLimit) {
