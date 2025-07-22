@@ -19,6 +19,14 @@
     "blob",
     "v5"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusSantosF/strapi-provider-upload-azure-storage-v5"
+  },
+  "bugs": {
+    "url": "https://github.com/MateusSantosF/strapi-provider-upload-azure-storage-v5/issues"
+  },
+  "homepage": "https://github.com/MateusSantosF/strapi-provider-upload-azure-storage-v5#readme",
   "author": "Mateus Ferreira",
   "license": "MIT",
   "dependencies": {
